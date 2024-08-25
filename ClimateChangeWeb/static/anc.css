@@ -1,0 +1,58 @@
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom, #006400, #013220);
+    color: #ffffff;
+}
+
+.header {
+    text-align: center;
+    padding: 1rem;
+}
+
+.back-button {
+    padding: 1rem 2rem;
+    border: none;
+    background: linear-gradient(to bottom, #006400, #013220);
+    color: white;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+}
+
+.back-button:hover {
+    background: linear-gradient(to bottom, #006400, #013220);
+    transform: scale(1.05);
+}
+
+.luxury-article {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.luxury-article h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    color: #f0e68c;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.luxury-article p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    margin-bottom: 1.5rem;
+}
+
+.luxury-article .luxury-banner {
+    display: block;
+    max-width: 100%;
+    margin: 2rem auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}

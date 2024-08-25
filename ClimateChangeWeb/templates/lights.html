@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aydınlatma Enerji Verimliliği Hesaplama</title>
+    <link rel="stylesheet" href="static\styles.css">
+</head>
+<body>
+    <div class="header">
+        <button class="back-button" onclick="location.href='{{ url_for('index') }}'">Ana Sayfaya Dön</button>
+    </div>
+    <h1>Aydınlatma Enerji Verimliliği Hesaplama</h1>
+    <form action="C:\Users\ANC.KATANA\Desktop\ClimateChangeWeb\templates\answer.html" method="POST">
+        <label for="light-bulbs">Kullandığınız Ampul Sayısı:</label>
+        <input type="number" id="light-bulbs" name="light_bulbs" required>
+        <button type="submit">Hesapla</button>
+    </form>
+</body>
+</html>

@@ -1,0 +1,217 @@
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom, #006400, #013220);
+    color: #ffffff;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 15px 30px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.hero {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 20px;
+    position: relative;
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+    position: relative;
+    z-index: 1; /* Metnin butonların üstünde olmasını sağlar */
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 20px;
+    position: relative;
+    z-index: 1; /* Butonların metnin üstünde olmasını sağlar */
+}
+
+.hero-buttons button {
+    padding: 10px 20px;
+    font-size: 18px;
+    color: #ffffff;
+    background-color: #2e8b57;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.hero-buttons button:hover {
+    background-color: #3cb371;
+}
+
+.info-section, .pollution-section, .footprint-section {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.info-section h2, .pollution-section h2, .footprint-section h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.info-section p, .pollution-section p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.info-section button, .footprint-section button {
+    padding: 10px 20px;
+    font-size: 18px;
+    color: #ffffff;
+    background-color: #2e8b57;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.info-section button:hover, .footprint-section button:hover {
+    background-color: #3cb371;
+}
+
+.slider-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.slider {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+#slider-year {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.slider-ruler {
+    position: absolute;
+    top: -20px; /* Cetvelin slider ile hizalanması için ayarla */
+    width: 100%;
+    height: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.ruler-mark {
+    position: absolute;
+    height: 20px;
+    border-left: 1px solid black;
+    transform: translateX(-50%);
+    font-size: 12px;
+    text-align: center;
+    margin-top: 5px;
+}
+
+.ruler-mark::before {
+    content: "";
+    display: block;
+    width: 1px;
+    height: 10px;
+    background-color: black;
+    margin-bottom: 5px;
+}
+
+footer {
+    background-color: #013220;
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.footer-forms {
+    display: flex;
+    gap: 50px;
+}
+
+.form-container {
+    width: 300px;
+}
+
+.form-container h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.form-container label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.form-container input, .form-container textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: none;
+}
+
+.form-container button {
+    padding: 10px 20px;
+    font-size: 18px;
+    color: #ffffff;
+    background-color: #2e8b57;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.form-container button:hover {
+    background-color: #3cb371;
+}
+
+
+.cursor {
+    border-right: 2px solid #ffffff;
+    animation: blink 0.7s infinite;
+}
+
+@keyframes blink {
+    0% { opacity: 1; }
+    50% { opacity: 0; }
+    100% { opacity: 1; }
+}

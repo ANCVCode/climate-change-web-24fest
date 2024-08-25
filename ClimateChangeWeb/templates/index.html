@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>İklim Değişikliği Projesi</title>
+    <link rel="stylesheet" href="/static/styles.css">
+    <script src="/static/script.js" defer></script> <!-- JavaScript dosyasının yolu -->
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">ANC</div>
+        <ul class="nav-links">
+            <li><a href="#bilgilendirme">Bilgilendirme</a></li>
+            <li><a href="#iklim-degisikligi">İklim Değişikliği</a></li>
+            <li><a href="#iletisim">İletişim</a></li>
+        </ul>
+    </nav>
+
+    <!-- Ana Sayfa Giriş Bölümü -->
+    <section class="hero">
+        <h1 id="hero-text">Çevreyi <mark id="hero-mark">Koruyun.</mark></h1>
+        <div class="hero-buttons">
+            <button id="bilgilendirme-btn">Bilgilendirme</button>
+            <button id="iletisim-btn">İletişim</button>
+        </div>
+        <img src="/static/images/8.png" alt="wrld8" style="width:800px;height:auto;margin-top:20px;">
+    </section>
+
+    <!-- İklim Değişikliği Bilgilendirme Bölümü -->
+    <section id="iklim-degisikligi" class="info-section">
+        <h2>İklim Değişikliği Nedir?</h2>
+        <p>İklim değişikliği, uzun dönemli hava durumu değişiklikleri anlamına gelir. Bu değişiklikler, dünya genelinde birçok ekosistemi ve insan yaşamını etkileyebilir.</p>
+        <button id="daha-fazla-bilgi-btn" onclick="location.href='/informclimate'">Daha Fazla Bilgi</button>
+    </section>
+
+    <div class="slider-container">
+        <input type="range" min="0" max="4" value="0" class="slider" id="pollution-slider">
+        <div class="slider-ruler">
+            <span class="ruler-mark" style="left: 0%;">1985</span>
+            <span class="ruler-mark" style="left: 25%;">1995</span>
+            <span class="ruler-mark" style="left: 50%;">2010</span>
+            <span class="ruler-mark" style="left: 75%;">2020</span>
+            <span class="ruler-mark" style="left: 100%;">2028</span>
+        </div>
+        <div id="slider-year"></div>
+        <img id="pollution-image" alt="Pollution Image">
+        <p id="pollution-info"></p>
+    </div>
+
+    <!-- Karbon Ayak İzinizi Hesaplayın -->
+    <section class="footprint-section">
+        <h2>Karbon Ayak İzinizi Hesaplayın</h2>
+        <div class="button-center">
+            <button id="footprint-calculate-btn" onclick="location.href='{{ url_for('home') }}'">Hesaplayın</button>
+        </div>
+    </section>
+
+    <!-- Footer Form Bölümü -->
+    <footer>
+        <div class="footer-forms">
+            <div class="form-container">
+                <h3>Bize Katılın</h3>
+                <form id="join-form">
+                    <label for="email">E-posta:</label>
+                    <input type="email" id="email" name="email" required>
+                    <label for="reason">Neden Katılmak İstiyorsunuz?</label>
+                    <textarea id="reason" name="reason" required></textarea>
+                    <button type="submit">Gönder</button>
+                </form>
+            </div>
+            <div class="form-container">
+                <h3>Bug mı Buldun?</h3>
+                <form id="bug-form">
+                    <label for="bug-email">E-posta:</label>
+                    <input type="email" id="bug-email" name="bug-email" required>
+                    <label for="bug-description">Bug Açıklaması:</label>
+                    <textarea id="bug-description" name="bug-description" required></textarea>
+                    <button type="submit">Gönder</button>
+                </form>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
